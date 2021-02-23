@@ -11,14 +11,14 @@ setuptools.setup(
     description="Sound processing toolkit with Python",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/GaoangLiu/pspt",
+    url="https://github.com/GaoangLiu/psox",
     packages=setuptools.find_packages(),
     install_requires=[
         'smart-open'
     ],
-    # entry_points={
-    #     'console_scripts': ['sli=dofast.argparse_helper:parse_arguments'],
-    # },
+    entry_points={
+        'console_scripts': ['psox=tools.entry:run'],
+    },
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
